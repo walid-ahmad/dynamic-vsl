@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 
     <title>dynamicvsl</title>
@@ -24,14 +26,22 @@
         <p class="headline">Headlines of Product</p>
         <div class="video-option">
             <div class="video-player">
-                <video id="player" playsinline autoplay controls>
-                    <source src="assets/video.mp4" type="video/mp4" />
-                </video>
+                <!-- <video id="player" playsinline autoplay controls>
+                    <source src="new.mp4" type="video/mp4" />
+                </video> -->
             </div>
             <!-- Uncomment the following code and comment the the above code and check the output  -->
             <!-- <video id="player" playsinline autoplay controls>
                 <source id="videoSource" type="video/mp4" />
             </video> -->
+
+            <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+                poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+                <source
+                    src="https://res.cloudinary.com/dnrmkcfii/video/upload/v1686328228/my_videos/mih4i08le29hlq4mvssk.mp4"
+                    type="video/mp4" />
+
+            </video>
             <div class="buttons">
                 <button>Choice 1</button>
                 <button>Choice 2</button>
@@ -44,8 +54,8 @@
         </div>
     </div>
 
-    <script src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
 
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
     <script src="send-box.js"></script>
 </body>
 
