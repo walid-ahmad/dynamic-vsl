@@ -37,12 +37,30 @@ header {
 #player {
   margin: 0;
   padding: 0;
-  max-width: 760.003px;
-  max-height: 423.43px;
+  max-width: 760px;
+  max-height: 423px;
+}
+@media only screen and (max-width: 900px) {
+  #player {
+    max-width: 560px;
+    max-height: 423px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #player {
+    max-width: 460px;
+    max-height: 353px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #player {
+    max-width: 360px;
+    max-height: 350px;
+  }
 }
 .video-player {
-  max-width: 760.003px;
-  max-height: 423.43px;
+  max-width: 760px;
+  max-height: 423px;
 }
 .buttons {
   display: flex;
@@ -50,6 +68,12 @@ header {
   width: 100%;
   justify-content: space-around;
   gap: 70px;
+}
+@media only screen and (max-width: 500px) {
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .buttons button {
   border-radius: 4px;
