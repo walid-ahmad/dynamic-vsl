@@ -37,11 +37,16 @@ header {
   max-width: 760.003px;
   max-height: 423.43px;
 }
+.video-player {
+  max-width: 760.003px;
+  max-height: 423.43px;
+}
 .buttons {
   display: flex;
   flex-grow: 1;
   width: 100%;
   justify-content: space-around;
+  gap: 70px;
 }
 .buttons button {
   border-radius: 4px;
@@ -52,6 +57,7 @@ header {
   display: flex;
   min-width: 106px;
   min-height: 42px;
+  padding: 16px 16px 16px 16px;
   border: none;
   display: flex;
   justify-content: center;
