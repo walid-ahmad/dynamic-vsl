@@ -1,3 +1,3 @@
-const videoUrl = "assets/video.mp4";
+const videoUrl = "https://www.youtube.com/watch?v=c1XoQQViGMI";
 const videoElement = document.getElementById("videoSource");
 videoElement.setAttribute("src", videoUrl);
